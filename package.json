@@ -1,0 +1,19 @@
+{
+  "name": "fluorine",
+  "version": "0.0.1",
+  "description": "Lightweight full-stack file hosting application.",
+  "main": "/src/index.ts",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iceeburr/fluorine.git"
+  },
+  "author": "iceeburr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iceeburr/fluorine/issues"
+  },
+  "homepage": "https://github.com/iceeburr/fluorine#readme"
+}
