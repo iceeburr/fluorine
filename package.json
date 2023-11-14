@@ -4,7 +4,7 @@
   "description": "Lightweight full-stack file hosting application.",
   "main": "/src/index.ts",
   "scripts": {
-    "test": "npm run dev"
+    "dev": "node src/index.ts"
   },
   "repository": {
     "type": "git",
