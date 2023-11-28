@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/iceeburr/fluorine/issues"
   },
-  "homepage": "https://github.com/iceeburr/fluorine#readme"
+  "homepage": "https://github.com/iceeburr/fluorine#readme",
+  "devDependencies": {
+    "bun-types": "^1.0.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
