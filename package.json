@@ -1,8 +1,13 @@
 {
   "name": "fluorine",
-  "module": "./src/index.ts",
-  "type": "module",
-  "private": "true",
+  "version": "0.0.1",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "private": true,
   "scripts": {
     "build": "bun build ./src/api/* --outdir ./src/build && cd ./src/client && bun run build",
     "build-api": " bun build ./src/api/* --outdir ./src/build",
@@ -13,12 +18,7 @@
     "dev-client": "cd ./src/client && bun run dev"
   },
   "workspaces": [
-    "./src/client"
-  ],
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+    "./src/client",
+    "./src/api"
+  ]
 }
