@@ -1,23 +1,22 @@
 {
   "name": "fluorine",
-  "version": "0.0.1",
-  "description": "Lightweight full-stack file hosting application.",
-  "main": "/src/index.ts",
+  "module": "./src/index.ts",
+  "type": "module",
+  "private": "true",
   "scripts": {
-    "dev": "node src/index.ts"
+    "build": "bun build ./src/api/* --outdir ./src/build && cd ./src/client && bun run build",
+    "build-api": " bun build ./src/api/* --outdir ./src/build",
+    "build-client": "cd ./src/client && bun run build",
+    "start-api": "bun run ./src/build/index.js",
+    "start-client": "cd ./src/client && bun run start",
+    "dev-api": "bun run ./src/api/index.ts",
+    "dev-client": "cd ./src/client && bun run dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iceeburr/fluorine.git"
-  },
-  "author": "iceeburr",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iceeburr/fluorine/issues"
-  },
-  "homepage": "https://github.com/iceeburr/fluorine#readme",
+  "workspaces": [
+    "./src/client"
+  ],
   "devDependencies": {
-    "bun-types": "^1.0.14"
+    "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
